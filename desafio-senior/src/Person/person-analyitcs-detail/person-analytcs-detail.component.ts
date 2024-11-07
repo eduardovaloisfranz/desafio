@@ -7,7 +7,7 @@ import { QuickAccessComponent } from '../../Shared/quick-access/quick-access.com
 import { CardPersonPayrollComponent } from '../card-person-payroll/card-person-payroll.component';
 
 @Component({
-  selector: 'app-person-analyitcs-detail',
+  selector: 'app-person-analytcs-detail',
   standalone: true,
   imports: [
     TopbarComponent,
@@ -17,9 +17,9 @@ import { CardPersonPayrollComponent } from '../card-person-payroll/card-person-p
     QuickAccessComponent,
     CardPersonPayrollComponent
   ],
-  templateUrl: './person-analyitcs-detail.component.html',
-  styleUrl: './person-analyitcs-detail.component.scss'
+  templateUrl: './person-analytcs-detail.component.html',
+  styleUrl: './person-analytcs-detail.component.scss'
 })
-export class PersonAnalyitcsDetailComponent {
+export class PersonAnalyctsDetailComponent {
 
 }
