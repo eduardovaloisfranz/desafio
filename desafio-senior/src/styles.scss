@@ -1,3 +1,18 @@
 html, body {
     background-color: #FBFAFC;
+    margin: 0;
+}
+
+:root {
+    --outline: #888B99;
+    --dark-blue: #232F44;
+    --white-blue: #428BCA;
+    --dark: #656F7F;
+}
+
+.pl-3 {
+    padding-left: 1em;
+}
+.pb-1 {
+    padding-bottom: 0.5em;
 }
