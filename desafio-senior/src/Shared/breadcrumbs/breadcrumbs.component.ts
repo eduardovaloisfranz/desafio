@@ -1,4 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
+export interface BreadcrumbItem {
+  icon?: string;
+  label?: string;
+}
 
 @Component({
   selector: 'app-breadcrumbs',
@@ -8,5 +13,5 @@ import { Component } from '@angular/core';
   styleUrl: './breadcrumbs.component.scss'
 })
 export class BreadcrumbsComponent {
-
+  @Input() breadcrumbs: BreadcrumbItem[] = [];
 }

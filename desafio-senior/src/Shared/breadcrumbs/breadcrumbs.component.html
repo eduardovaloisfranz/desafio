@@ -1,1 +1,16 @@
-<p>breadcrumbs works!</p>
+<section class="breadcrumbs-container">
+    @for(breadcrumb of breadcrumbs; track breadcrumb; let last = $last; let first = $first) {
+        <div class="breadcrumb-item">
+            @if(breadcrumb.icon) {
+                <i [class.pl-2]="!first" class="text-dark hover-effect" [class]="breadcrumb.icon"></i>
+            }
+            @if(breadcrumb.label) {
+                <span class="text-dark pl-2 hover-effect">{{ breadcrumb.label }}</span>
+            }
+            @if(!last) {
+                <i class="pl-2 fa-solid fa-chevron-right"></i>
+            }
+
+        </div>
+    }
+</section>

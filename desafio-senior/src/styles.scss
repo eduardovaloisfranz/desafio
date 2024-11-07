@@ -3,6 +3,15 @@ html, body {
     margin: 0;
 }
 
+* {
+    font-family: 'helvetica';
+}
+
+h1 {
+    font-weight: normal;
+}
+
+
 :root {
     --outline: #888B99;
     --dark-blue: #232F44;
@@ -13,6 +22,38 @@ html, body {
 .pl-3 {
     padding-left: 1em;
 }
+
+.pl-2 {
+    padding-left: 0.75em;
+}
+
+.pr-3 {
+    padding-right: 1em;
+}
+
+.pr-2 {
+    padding-right: 0.75em;
+}
+
 .pb-1 {
     padding-bottom: 0.5em;
 }
+
+.text-outline {
+    color: var(--outline);
+}
+.text-dark-blue {
+    color: var(--dark-blue);
+}
+.text-dark {
+    color: var(--dark);
+}
+.text-white-blue {
+    color: var(--white-blue);
+}
+
+.page-content {
+    @extend .pl-3;
+    @extend .pr-3;
+}
+

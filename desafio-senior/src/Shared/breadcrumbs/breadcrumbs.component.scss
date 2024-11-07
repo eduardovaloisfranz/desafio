@@ -1,0 +1,15 @@
+.breadcrumbs-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.breadcrumb-item {
+    @extend .breadcrumbs-container;
+}
+.hover-effect {
+    cursor: pointer;
+}
+
+.hover-effect:hover {
+    text-decoration: underline;
+}

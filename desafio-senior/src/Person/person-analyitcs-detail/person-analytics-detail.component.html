@@ -1,10 +1,12 @@
 <app-topbar title="Gestão de pessoas"/>
-<h1 class="pl-3">
-    Meu analyitcs
-</h1>
-<app-breadcrumbs/>
+<div class="page-content">
+    <h1 class="text-dark-blue">
+        Meu analyitcs
+    </h1>
+    <app-breadcrumbs [breadcrumbs]="breadCrumbs" />
+    <app-card-person-summary/>
+    <app-card-person-meeting-records/>
+    <app-quick-access/>
+    <app-card-person-payroll/>
 
-<app-card-person-summary/>
-<app-card-person-meeting-records/>
-<app-quick-access/>
-<app-card-person-payroll/>
+</div>

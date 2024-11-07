@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TopbarComponent } from '../../Shared/topbar/topbar.component';
-import { BreadcrumbsComponent } from '../../Shared/breadcrumbs/breadcrumbs.component';
+import { BreadcrumbItem, BreadcrumbsComponent } from '../../Shared/breadcrumbs/breadcrumbs.component';
 import { CardPersonSummaryComponent } from '../card-person-summary/card-person-summary.component';
 import { CardPersonMeetingRecordsComponent } from '../card-person-meeting-records/card-person-meeting-records.component';
 import { QuickAccessComponent } from '../../Shared/quick-access/quick-access.component';
@@ -21,5 +21,15 @@ import { CardPersonPayrollComponent } from '../card-person-payroll/card-person-p
   styleUrl: './person-analytics-detail.component.scss'
 })
 export class PersonAnalyticsDetailComponent {
-
+  breadCrumbs: BreadcrumbItem[] = [
+    {
+      icon: 'fa-solid fa-house text-white-blue'
+    },
+    {
+      label: 'Gestão de pessoas'
+    },
+    {
+      label: 'Analytics'
+    }
+  ];
 }
