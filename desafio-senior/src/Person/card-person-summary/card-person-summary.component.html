@@ -1,8 +1,49 @@
-<app-card-container>
-    <app-card-title>
+<ng-template #userInfo let-person="person">
+    <section class="d-flex user-info">
+        <div>
+            <img class="user-thumbnail" [src]="person?.photoUri" [alt]="'Foto de :' + person?.name">
+        </div>
+        <div class="pl-3 d-flex flex-column">
+            <h2 class="user-name pt-1">
+                {{ person?.name }}
+            </h2>
+            <p class="pt-2 user-job">
+                {{ person?.jobName }}
+            </p>
+            <a href="#" class="pt-2">
+                Acessar o meu perfil
+            </a>
+        </div>
 
-    </app-card-title>
+    </section>
+</ng-template>
+
+<app-card-container>
+    <app-card-title title="Perfil"/>
     <app-card-body>
-        <!-- render person info -->
+        <div class="person-container">
+            <ng-container *ngTemplateOutlet="userInfo; context: { person: person }"></ng-container>
+             <div class="full-width">
+                 <section class="w-100 d-flex flex-wrap h-100 justify-content-evenly">
+                     <div class="d-flex">
+                         <div class="vertical-line pr-3"></div>
+                         <div>
+                             <h3 class="text-dark pt-1">
+                                 Empresa
+                             </h3>
+                             <h2 class="pt-1">
+                                 {{ person.companyName }}
+                             </h2>
+                         </div>
+                     </div>
+                     <div class="pl-3">
+                         <h3 class="text-dark pt-1">Departamento</h3>
+                         <h2 class="pt-1">
+                             {{ person.departament }}
+                         </h2>
+                     </div>
+                 </section>
+             </div>
+        </div>
     </app-card-body>
 </app-card-container>

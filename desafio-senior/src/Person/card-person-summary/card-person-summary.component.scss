@@ -1,0 +1,36 @@
+.vertical-line {
+    border-left: 1px solid var(--dark);
+    height: 100%;
+}
+
+.person-container {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+
+.user-thumbnail {
+    max-width: 10em;
+    border-radius: 50%;
+}
+
+.user-name {
+    font-weight: bold;
+    color: var(--dark-blue);
+}
+
+.user-job {
+    color: var(--outline-text);
+}
+
+.user-info {
+    width: 50%;
+}
+
+
+@media (max-width: 992px) {
+    .user-info {
+        width: 100%;
+    }
+}

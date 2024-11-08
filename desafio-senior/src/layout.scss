@@ -1,0 +1,32 @@
+.container {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.item-layout {
+  padding-top: 1em;
+}
+
+.text-outline {
+  color: var(--outline);
+}
+.text-dark-blue {
+  color: var(--dark-blue);
+}
+.text-dark {
+  color: var(--dark);
+}
+.text-white-blue {
+  color: var(--white-blue);
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.page-content {
+  padding-left: 1em;
+  padding-right: 1em;
+}
