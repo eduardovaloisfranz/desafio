@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import './layout.scss';
-@import './flex-helpers.scss';
-@import './space-utils.scss';
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import "./layout.scss";
+@import "./flex-helpers.scss";
+@import "./space-utils.scss";
 
 
 :root {
@@ -11,6 +11,14 @@
     --white-blue: #428BCA;
     --dark: #656F7F;
     --border-color: #DEDCE5;
+
+    --primary: #428BCA;
+    --secondary: #6C757D;
+    --success: #488000;
+    --danger: #E33434;
+    --warning: #F5A319;
+    --info: #17A2B8;
+    --light: #F8F9FA;
 }
 
 html, body {
@@ -19,7 +27,7 @@ html, body {
 }
 
 * {
-    font-family: "Open Sans", sans-serif;
+    font-family: Open Sans, sans-serif;
 }
 
 h1, h3, h2, p {

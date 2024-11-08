@@ -1,0 +1,90 @@
+.btn {
+    background: inherit;
+    border: none;
+    color: #fff;
+    padding: 0.5em;
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+    &.btn-primary {
+        background-color: var(--primary);
+        transition: background-color 150ms;
+    }
+    &.btn-primary:not([disabled]):hover {
+        background-color: #24669E;
+    }
+
+    &.btn-secondary {
+        background-color: var(--secondary);
+        transition: background-color 150ms;
+    }
+    &.btn-secondary:not([disabled]):hover {
+        background-color: #4c5359;
+    }
+
+    &.btn-danger {
+        background-color: var(--danger);
+        transition: background-color 150ms;
+    }
+    &.btn-danger:not([disabled]):hover {
+        background-color: #ad2424;
+    }
+
+    &.btn-success {
+        background-color: var(--success);
+        transition: background-color 150ms;
+    }
+    &.btn-success:not([disabled]):hover {
+        background-color: #2f5400;
+    }
+
+    &.btn-warning {
+        background-color: var(--warning);
+        transition: background-color 150ms;
+    }
+    &.btn-warning:not([disabled]):hover {
+        background-color: #c78414;
+    }
+
+    &.btn-info {
+        background-color: var(--info);
+        transition: background-color 150ms;
+    }
+    &.btn-info:not([disabled]):hover {
+        background-color: #0f6c7a;
+    }
+
+    &.btn-light {
+        color: var(--dark);
+        background-color: var(--light);
+        transition: background-color 150ms;
+    }
+    &.btn-light:not([disabled]):hover {
+        background-color: #b1b2b3;
+    }
+
+    &.btn-dark {
+        background-color: var(--dark);
+        transition: background-color 150ms;
+    }
+    &.btn-dark:not([disabled]):hover {
+        background-color: #151c29;
+    }
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: default;
+    background-color: #fff;
+    color: var(--dark);
+}
+
+.btn:disabled.circle {
+    border: 1px solid var(--dark);
+}
+
+.circle {
+    border-radius: 50% !important;
+    width: 2rem;
+}

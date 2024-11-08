@@ -1,1 +1,9 @@
-<p>action-button works!</p>
+<button class="btn" [class]="'btn-' + type" [class.circle]="!label" [disabled]="disabled">
+    @if(icon) {
+        <i [class.pl-1]="label" [class]="icon" [class.pr-2]="label"></i>
+    }
+
+    @if(label) {
+        <span class="pr-2">{{ label }}</span>
+    }
+</button>
