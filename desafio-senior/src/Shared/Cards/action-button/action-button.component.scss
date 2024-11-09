@@ -61,6 +61,7 @@
         transition: background-color 150ms;
         transition: color 150ms;
         border: 1px solid var(--dark);
+        color: #232F44;
     }
     &.btn-light:not([disabled]):hover {
         background-color: #b1b2b3;
