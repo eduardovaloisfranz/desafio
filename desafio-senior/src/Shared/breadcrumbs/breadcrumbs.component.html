@@ -1,6 +1,6 @@
 <section class="breadcrumbs-container">
     @for(breadcrumb of breadcrumbs; track breadcrumb; let last = $last; let first = $first) {
-        <div class="breadcrumb-item">
+        <div class="breadcrumb-item" (click)="onClickBreadcrumb(breadcrumb)">
             @if(breadcrumb.icon) {
                 <i [class.pl-2]="!first" class="text-dark hover-effect" [class]="breadcrumb.icon"></i>
             }

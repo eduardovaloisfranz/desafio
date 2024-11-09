@@ -3,6 +3,7 @@ import { Component, Input } from '@angular/core';
 export interface BreadcrumbItem {
   icon?: string;
   label?: string;
+  onClick?: (evt: BreadcrumbItem) => any
 }
 
 @Component({
@@ -14,4 +15,11 @@ export interface BreadcrumbItem {
 })
 export class BreadcrumbsComponent {
   @Input() breadcrumbs: BreadcrumbItem[] = [];
+
+  onClickBreadcrumb(breadcrumb: BreadcrumbItem) {
+    if (breadcrumb.onClick) {
+      breadcrumb.onClick(breadcrumb);
+    }
+
+  }
 }

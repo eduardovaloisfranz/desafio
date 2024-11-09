@@ -23,13 +23,16 @@ import { CardPersonPayrollComponent } from '../card-person-payroll/card-person-p
 export class PersonAnalyticsDetailComponent {
   breadCrumbs: BreadcrumbItem[] = [
     {
-      icon: 'fa-solid fa-house text-white-blue'
+      icon: 'fa-solid fa-house text-white-blue',
+      onClick: this.homeClicked.bind(this)
     },
     {
-      label: 'Gestão de pessoas'
+      label: 'Gestão de pessoas',
+      onClick: this.peopleManagementClicked.bind(this)
     },
     {
-      label: 'Analytics'
+      label: 'Analytics',
+      onClick: this.analyticsClicked.bind(this)
     }
   ];
 
@@ -40,5 +43,17 @@ export class PersonAnalyticsDetailComponent {
     jobName: 'Executiva de vendas',
     personId: 1,
     photoUri: 'assets/pictures/user-photo.jpeg',
+  }
+
+  protected homeClicked() {
+    console.log('Home clicked');
+  }
+
+  protected peopleManagementClicked() {
+    console.log('People management clicked');
+  }
+
+  protected analyticsClicked() {
+    console.log('Analytics clicked');
   }
 }
