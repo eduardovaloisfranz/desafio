@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { TopbarComponent } from '../../Shared/topbar/topbar.component';
-import { BreadcrumbItem, BreadcrumbsComponent } from '../../Shared/breadcrumbs/breadcrumbs.component';
-import { CardPersonSummaryComponent, Departament, Person } from '../card-person-summary/card-person-summary.component';
 import { CardPersonMeetingRecordsComponent } from '../card-person-meeting-records/card-person-meeting-records.component';
-import { QuickAccessComponent } from '../../Shared/quick-access/quick-access.component';
+import { CardPersonSummaryComponent, Departament, Person } from '../card-person-summary/card-person-summary.component';
+import { BreadcrumbItem, BreadcrumbsComponent } from '@shared/breadcrumbs/breadcrumbs.component';
+import { QuickAccessComponent } from '@shared/quick-access/quick-access.component';
+import { TopbarComponent } from '@shared/topbar/topbar.component';
 import { CardPersonPayrollComponent } from '../card-person-payroll/card-person-payroll.component';
 
 @Component({

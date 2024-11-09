@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { CardContainerComponent } from '../../Shared/Cards/card-container/card-container.component';
-import { CardTitleComponent } from '../../Shared/Cards/card-title/card-title.component';
-import { CardBodyComponent } from '../../Shared/Cards/card-body/card-body.component';
-import { CardInfoComponent } from '../../Shared/Cards/card-info/card-info.component';
-import { ActionButtonComponent } from '../../Shared/Cards/action-button/action-button.component';
-import { PutZeroIfAbsentPipe } from '../../Shared/Pipes/put-zero-if-absent.pipe';
-import { ColorState } from '../../Shared/models/color-state.model';
-
+import { ActionButtonComponent } from '@shared/Cards/action-button/action-button.component';
+import { CardBodyComponent } from '@shared/Cards/card-body/card-body.component';
+import { CardContainerComponent } from '@shared/Cards/card-container/card-container.component';
+import { CardInfoComponent } from '@shared/Cards/card-info/card-info.component';
+import { CardTitleComponent } from '@shared/Cards/card-title/card-title.component';
+import { PutZeroIfAbsentPipe } from '@shared/Pipes/put-zero-if-absent.pipe';
+import { ColorState } from '@shared/models/color-state.model';
 
 interface VacationDetail {
   label: string,

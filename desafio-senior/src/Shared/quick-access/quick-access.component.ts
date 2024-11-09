@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CardInfoComponent } from '../Cards/card-info/card-info.component';
+import { CardInfoComponent } from '@shared/Cards/card-info/card-info.component';
 
 export interface QuickAccessItem {
   icon: string,
