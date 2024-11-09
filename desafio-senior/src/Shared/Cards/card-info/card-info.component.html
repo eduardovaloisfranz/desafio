@@ -1,1 +1,23 @@
-<p>card-info works!</p>
+<div class="card-container p-2" [class.align-items-center]="!subtitle || !showVertical">
+    @if(showVertical) {
+        <section class="vertical-container mr-3 " [class]="verticalColorClass" [class.vertical-container-icon]="icon">
+            @if(icon) {
+                <i [class]="iconClass"></i>
+            }
+        </section>
+    }
+    @if(!showVertical) {
+        <i [class]="iconClass" class="mr-2"></i>
+    }
+    <section class="card-info-container">
+        <h4 class="card-info-title" [style.color]="titleTextColor">
+            {{ title }}
+        </h4>
+
+        <h3 class="card-info-subtitle" [style.color]="subtitleTextColor">
+            {{ subtitle }}
+        </h3>
+
+    </section>
+
+</div>

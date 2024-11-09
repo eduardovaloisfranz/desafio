@@ -1,0 +1,12 @@
+.meeting-history-container {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+@media (max-width: 768px) {
+    .meeting-history-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

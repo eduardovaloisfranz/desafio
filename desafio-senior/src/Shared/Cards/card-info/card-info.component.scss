@@ -1,0 +1,35 @@
+i {
+    font-size: 1.5em;
+}
+.vertical-container {
+    min-width: 1em;
+}
+
+.card-container {
+    display: flex;
+}
+
+.card-info-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.vertical-container-icon {
+    display: flex;
+    align-items: center;
+    i {
+        padding: 0.75em;
+        color: white;
+    }
+}
+
+
+.card-info-title {
+    color: var(--dark);
+}
+
+.card-info-subtitle {
+    color: var(--dark-blue);
+    font-weight: bold;
+}

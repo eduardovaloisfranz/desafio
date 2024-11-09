@@ -3,6 +3,15 @@
         <app-action-button icon="fa-solid fa-plus" label="Nova reunião" type="primary" />
     </app-card-title>
     <app-card-body>
-        <!-- use card-info @for  -->
+        <div class="meeting-history-container">
+            @for(meetingRecord of meetingRecords; track meetingRecord) {
+                <app-card-info
+                    [icon]="meetingRecord.icon"
+                    [title]="meetingRecord.label"
+                    [subtitle]="meetingRecord.count | putZeroIfAbsent"
+                    [verticalColorState]="meetingRecord.color"
+                 />
+            }
+        </div>
     </app-card-body>
 </app-card-container>

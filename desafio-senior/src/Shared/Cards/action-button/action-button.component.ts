@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
-
-export type ButtonType = 'primary' | 'secondary' | 'success' | 'danger' | 'warning' | 'info' | 'light' | 'dark';
+import { ColorState } from '../../models/color-state.model';
 @Component({
   selector: 'app-action-button',
   standalone: true,
@@ -11,6 +10,6 @@ export type ButtonType = 'primary' | 'secondary' | 'success' | 'danger' | 'warni
 export class ActionButtonComponent {
   @Input() icon!: string
   @Input() label!: string;
-  @Input() type: ButtonType = 'secondary'
+  @Input() type: ColorState = 'secondary'
   @Input() disabled = false;
 }
