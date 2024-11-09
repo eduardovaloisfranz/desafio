@@ -1,12 +1,9 @@
 .container {
-  padding: 1em;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.item-layout {
-  padding-top: 1em;
+  display: grid;
+  row-gap: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 2em;
 }
 
 .text-outline {

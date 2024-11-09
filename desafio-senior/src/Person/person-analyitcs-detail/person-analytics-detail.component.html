@@ -1,25 +1,11 @@
 <app-topbar title="Gestão de pessoas"/>
-<div class="page-content">
-    <div class="container">
-        <div class="item-layout">
-            <h1 class="text-dark-blue">
-                Meu analytics
-            </h1>
-        </div>
-        <div class="item-layout">
-            <app-breadcrumbs [breadcrumbs]="breadCrumbs" />
-        </div>
-        <div class="item-layout">
-            <app-card-person-summary [person]="person"/>
-        </div>
-        <div class="item-layout">
-            <app-card-person-meeting-records/>
-        </div>
-        <div class="item-layout">
-            <app-quick-access/>
-        </div>
-        <div class="item-layout">
-            <app-card-person-payroll/>
-        </div>
-    </div>
+<div class="container">
+    <h1 class="text-dark-blue">
+        Meu analytics
+    </h1>
+    <app-breadcrumbs [breadcrumbs]="breadCrumbs" />
+    <app-card-person-summary [person]="person"/>
+    <app-card-person-meeting-records/>
+    <app-quick-access/>
+    <app-card-person-payroll/>
 </div>
