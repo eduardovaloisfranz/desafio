@@ -49,4 +49,9 @@ export class CardPersonMeetingRecordsComponent {
       color: 'dark-green'
     }
   ]
+
+
+  protected newMeeting() {
+    console.log('New meeting event.')
+  }
 }

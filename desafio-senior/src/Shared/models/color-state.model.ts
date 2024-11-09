@@ -1,1 +1,1 @@
-export type ColorState = 'primary' | 'secondary' | 'success' | 'danger' | 'warning' | 'info' | 'light' | 'dark' | 'dark-green' | 'white-primary';
+export type ColorState = 'primary' | 'secondary' | 'success' | 'danger' | 'warning' | 'info' | 'light' | 'dark' | 'dark-green' | 'white-primary' | 'dark-primary';

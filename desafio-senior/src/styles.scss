@@ -21,6 +21,7 @@
     --light: #F8F9FA;
     --dark-green: #008080;
     --white-primary: #428BCA;
+    --dark-primary: #063951;
 }
 
 html, body {
@@ -30,6 +31,7 @@ html, body {
 
 * {
     font-family: Open Sans, sans-serif;
+    box-sizing: border-box;
 }
 
 h1, h3, h2, h4, h3, p {
@@ -49,4 +51,8 @@ a {
 
 .h-100 {
     height: 100%;
+}
+
+.c-pointer {
+    cursor: pointer;
 }

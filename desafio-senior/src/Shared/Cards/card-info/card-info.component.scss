@@ -3,10 +3,13 @@ i {
 }
 .vertical-container {
     min-width: 1em;
+    flex: 0 0 auto;
+    max-height: 4em;
 }
 
 .card-container {
     display: flex;
+    height: 100%;
 }
 
 .card-info-container {
@@ -22,14 +25,4 @@ i {
         padding: 0.75em;
         color: white;
     }
-}
-
-
-.card-info-title {
-    color: var(--dark);
-}
-
-.card-info-subtitle {
-    color: var(--dark-blue);
-    font-weight: bold;
 }

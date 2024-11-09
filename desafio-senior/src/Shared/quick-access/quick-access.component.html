@@ -1,2 +1,21 @@
-<h3>Acesso Rápido</h3>
-<!-- @for each card info. -->
+<h3 class="quick-access-title">Acesso Rápido</h3>
+
+<div class="quick-access-container pt-3">
+    @for(quickAccessItem of quickAccessItems; track quickAccessItem) {
+        <app-card-info
+            (click)="onClickQuickAccess(quickAccessItem)"
+            [cardInfoContainerClass]="'c-pointer'"
+            [icon]="quickAccessItem.icon"
+            [title]="quickAccessItem.title"
+            [subtitle]="quickAccessItem.subtitle"
+            [showVertical]="false"
+            titleTextColor="dark-primary"
+            subtitleTextColor="dark-primary"
+            iconColor="dark-primary"
+            subtitleFontWeight="normal">
+            <ng-template #subtitle let-subtitle>
+                <h4>{{ subtitle }}</h4>
+            </ng-template>
+        </app-card-info>
+    }
+</div>
