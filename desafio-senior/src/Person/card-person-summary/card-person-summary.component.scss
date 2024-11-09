@@ -1,12 +1,18 @@
+.horizontal-line {
+    display: none;
+}
+.divider {
+    border-top: 1px solid var(--border-color);
+}
+
 .vertical-line {
     border-left: 1px solid var(--dark);
     height: 100%;
 }
 
 .person-container {
-    display: flex;
-    align-items: stretch;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 
@@ -24,13 +30,21 @@
     color: var(--outline-text);
 }
 
-.user-info {
-    width: 50%;
+@media (min-width: 1400px) {
+    .person-container {
+        grid-template-columns: 1fr 2fr;
+    }
 }
 
 
 @media (max-width: 992px) {
-    .user-info {
-        width: 100%;
+    .person-container {
+        grid-template-columns: 1fr;
+    }
+    .vertical-line {
+        display: none;
+    }
+    .horizontal-line {
+        display: block;
     }
 }

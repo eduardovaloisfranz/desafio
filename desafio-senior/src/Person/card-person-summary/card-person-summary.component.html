@@ -1,5 +1,5 @@
 <ng-template #userInfo let-person="person">
-    <section class="d-flex user-info">
+    <section class="d-flex">
         <div>
             <img class="user-thumbnail" [src]="person?.photoUri" [alt]="'Foto de :' + person?.name">
         </div>
@@ -23,27 +23,28 @@
     <app-card-body>
         <div class="person-container">
             <ng-container *ngTemplateOutlet="userInfo; context: { person: person }"></ng-container>
-             <div class="full-width">
-                 <section class="w-100 d-flex flex-wrap h-100 justify-content-evenly">
-                     <div class="d-flex">
-                         <div class="vertical-line pr-3"></div>
-                         <div>
-                             <h3 class="text-dark pt-1">
-                                 Empresa
-                             </h3>
-                             <h2 class="pt-1">
-                                 {{ person.companyName }}
-                             </h2>
-                         </div>
-                     </div>
-                     <div class="pl-3">
-                         <h3 class="text-dark pt-1">Departamento</h3>
-                         <h2 class="pt-1">
-                             {{ person.departament }}
-                         </h2>
-                     </div>
-                 </section>
-             </div>
+            <section class="horizontal-line">
+                <hr class="divider">
+            </section>
+            <section class="w-100 d-flex flex-wrap h-100 justify-content-evenly">
+                <div class="d-flex">
+                    <div class="vertical-line pr-3"></div>
+                    <div>
+                        <h3 class="text-dark pt-1">
+                            Empresa
+                        </h3>
+                        <h2 class="pt-1">
+                            {{ person.companyName }}
+                        </h2>
+                    </div>
+                </div>
+                <div class="pl-3">
+                    <h3 class="text-dark pt-1">Departamento</h3>
+                    <h2 class="pt-1">
+                        {{ person.departament }}
+                    </h2>
+                </div>
+            </section>
         </div>
     </app-card-body>
 </app-card-container>
