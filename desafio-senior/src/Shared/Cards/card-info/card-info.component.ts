@@ -39,4 +39,8 @@ export class CardInfoComponent {
   protected get subtitleColor() {
     return this.subtitleTextColor ? `text-${this.subtitleTextColor}` : '';
   }
+
+  protected get hasSubtitle() {
+    return this.subtitle !== undefined || this.subtitle !== null
+  }
 }

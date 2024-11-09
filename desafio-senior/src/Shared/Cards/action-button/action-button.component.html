@@ -1,6 +1,6 @@
 <button class="btn" [class]="'btn-' + type" [class.circle]="!label" [disabled]="disabled">
     @if(icon) {
-        <i [class.pl-1]="label" [class]="icon" [class.pr-2]="label"></i>
+        <i [class.pl-1]="label" [class]="icon + iconColorClass" [class.pr-2]="label"></i>
     }
 
     @if(label) {

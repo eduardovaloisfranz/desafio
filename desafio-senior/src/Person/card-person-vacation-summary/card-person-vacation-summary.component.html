@@ -1,10 +1,20 @@
 <app-card-container>
     <app-card-title title="FÉRIAS">
-        <app-action-button />
-        <app-action-button label="Ver detalhes"/>
+        <app-action-button icon="fa-solid fa-star" type="light" iconColor="warning" />
+        <app-action-button label="Ver detalhes" type="light" (click)="vacationDetail()"/>
     </app-card-title>
-
     <app-card-body>
-        <!-- for each card-info -->
+        <div class="vacation-list-container">
+            @for(vacation of vacationList; track vacation) {
+                <app-card-info
+                    [title]="vacation.label"
+                    [subtitle]="vacation.daysCount"
+                    [verticalColorState]="vacation.color">
+                    <ng-template #subtitle let-subtitle let-subtitleColor="subtitleColor" let-subtitleFontWeight="subtitleFontWeight">
+                        <h3 [class]="subtitleColor" [style.font-weight]="subtitleFontWeight"> {{ subtitle | putZeroIfAbsent }} </h3>
+                    </ng-template>
+                </app-card-info>
+            }
+        </div>
     </app-card-body>
 </app-card-container>

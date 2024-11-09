@@ -7,7 +7,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class PutZeroIfAbsentPipe implements PipeTransform {
 
   transform(value: number): string {
-    return value < 9 ? `0${value}` : value.toString();
+    return (value < 9 && value > 0) ? `0${value}` : value.toString();
   }
 
 }

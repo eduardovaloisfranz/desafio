@@ -1,4 +1,4 @@
-<div [class]="cardInfoContainerClass" class="card-container p-2" [class.align-items-center]="!subtitle || !showVertical">
+<div [class]="cardInfoContainerClass" class="card-container p-2" [class.align-items-center]="!hasSubtitle || !showVertical">
     @if(showVertical) {
         <section class="vertical-container mr-3 " [class]="verticalColorClass" [class.vertical-container-icon]="icon">
             @if(icon) {
@@ -19,7 +19,7 @@
                 {{ subtitle }}
             </h3>
         </ng-template>
-        <ng-container *ngTemplateOutlet="subtitleContent() || defaultSubtitle; context: { $implicit: subtitle }"></ng-container>
+        <ng-container *ngTemplateOutlet="subtitleContent() || defaultSubtitle; context: { $implicit: subtitle, subtitleColor: subtitleColor, subtitleFontWeight: subtitleFontWeight }"></ng-container>
     </section>
 
 </div>
